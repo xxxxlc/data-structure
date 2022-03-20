@@ -1,4 +1,4 @@
-//: Algorithm/src/func/PrintTest.java
+//: data_structure/src/func/PrintTest.java
 // Uses the static printing methods in Print.java.
 package func;
 
