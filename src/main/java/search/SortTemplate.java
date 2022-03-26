@@ -46,6 +46,14 @@ public class SortTemplate{
         print();
     }
 
+    public static void reverse(Comparable[] a) {
+        for (int i = 0; i < a.length / 2; ++i) {
+            Comparable tmp = a[i];
+            a[i] = a[a.length - 1 - i];
+            a[a.length - 1 - i] = tmp;
+        }
+    }
+
     public static void main(String[] args) {
         Integer[] a = {4, 8, 6, 5};
         sort(a);

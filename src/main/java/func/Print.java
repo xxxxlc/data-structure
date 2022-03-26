@@ -20,6 +20,8 @@ public class Print {
         System.out.print(obj);
     }
 
+    public static void printwt(Object obj) { System.out.print(obj); System.out.print("\s");}
+
     // The new Java SE5 printf() (from C)
     public static PrintStream printf(String format, Object... args) {
         return System.out.printf(format, args);

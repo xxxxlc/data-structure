@@ -17,6 +17,9 @@ public class Quick extends SortTemplate {
 
 
     public static void shuffle(Comparable[] a) {
+        /**
+         * shuffle the array
+         */
         Random random = new Random();
         int len = a.length;
         for (int i = 0; i < len - 1; ++i) {
@@ -49,6 +52,9 @@ public class Quick extends SortTemplate {
 
 
     public static int partition(Comparable[] a, int left, int right) {
+        /**
+         * Quick divide
+         */
         int i = left;
         int j = right + 1;
 //        Comparable v = a[left];
