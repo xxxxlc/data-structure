@@ -2,6 +2,8 @@
 // Print methods that can be used without qualifiers
 package func;
 
+import basic_datastructure.DoubleLinkedList;
+import basic_datastructure.List;
 import java.io.*;
 
 public class Print {
@@ -26,4 +28,30 @@ public class Print {
     public static PrintStream printf(String format, Object... args) {
         return System.out.printf(format, args);
     }
+
+    // Print array
+    public static void printArray (Object[] a) {
+        for (Object o : a) {
+            printwt(o);
+        }
+        print();
+    }
+
+    // Print List
+    public static void printList (List.Node head) {
+        while (head != null) {
+            printwt(head.item);
+            head = head.next;
+        }
+        print();
+    }
+
+    public static void printList (DoubleLinkedList.DoubleNode head) {
+        while (head != null) {
+            printwt(head.item);
+            head = head.next;
+        }
+        print();
+    }
+
 }

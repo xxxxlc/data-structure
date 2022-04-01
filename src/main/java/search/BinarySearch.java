@@ -1,7 +1,6 @@
 //: data_structure/src/search/BinarySearch.java
 // BinarySearch implementation
 package search;
-import java.util.Arrays;
 import static func.Print.print;
 
 public class BinarySearch {

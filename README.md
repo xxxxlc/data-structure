@@ -3,6 +3,15 @@ complete some data structure and algorithms
 
 
 
+## Basic 
+
+- [x] Bag
+- [x] Stack
+  - [x] Resizing Array Stack
+- [x] List
+  - [x] DoubleLinkedList
+- [x] Queue
+
 ## Search
 
 - [x] BinarySearch
@@ -19,3 +28,20 @@ complete some data structure and algorithms
   - [x] three-spilt
   - [x] five-spilt
   - [x] calculate the median
+
+## Priority Queue
+
+- [x] MaxPQ implemented by 
+  - [x] Disorder Array
+  - [x] Order Array
+  - [x] Heap 
+  - [x] Mult Frok Heap
+  - [x] List
+- [x] Index MaxPQ
+- [x] Index MinPQ
+
+## Symbol Table
+
+- [x] SequentialSearch St
+- [x] BinarySrarch St
+

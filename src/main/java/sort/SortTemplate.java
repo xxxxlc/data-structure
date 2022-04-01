@@ -1,4 +1,4 @@
-package search;
+package sort;
 import static func.Print.print;
 import static func.Print.printnb;
 

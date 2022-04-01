@@ -1,4 +1,4 @@
-package search;
+package sort;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -129,6 +129,26 @@ public class Quick extends SortTemplate {
         }
         sort_three_split(a, left, lt - 1);
         sort_three_split(a, gt + 1, right);
+    }
+
+    /**
+     *
+     * @param a array
+     * @param k element which rank k
+     * @return k element which rank k
+     */
+    public static Comparable select (Comparable[] a, int k) {
+        shuffle(a);
+        int left = 0;
+        int right = a.length - 1;
+        while (left < right) {
+            int j = partition(a, left, right);
+            if (j == k) return a[k];
+            else if (j > k) right = j - 1;
+            else left = j + 1;
+        }
+
+        return a[k];
     }
 
     public static void main(String[] args) {

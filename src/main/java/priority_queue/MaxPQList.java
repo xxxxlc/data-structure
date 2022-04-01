@@ -1,7 +1,7 @@
 package priority_queue;
 
 import func.Print;
-import search.InsertSort;
+import sort.InsertSort;
 
 import java.util.LinkedList;
 
