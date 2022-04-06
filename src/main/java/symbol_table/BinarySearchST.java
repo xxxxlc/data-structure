@@ -100,10 +100,9 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> extends OrderST<
         return keys[i - 1];
     }
 
-    public Key delete (Key key) {
+    public void delete (Key key) {
         if (!contains(key)) throw new NoSuchElementException("no such key in ST");
         int i = rank(key);
-        Key temp = keys[i];
         for (int j = i; j < N; ++j) {
             keys[j] = keys[j + 1];
             vals[j] = vals[j + 1];
@@ -112,8 +111,6 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> extends OrderST<
         vals[N--] = null;
 
         if (N > 0 && N < keys.length / 4) resize(keys.length / 2);
-
-        return temp;
     }
 
     public Iterable<Key> keys (Key left, Key right) {

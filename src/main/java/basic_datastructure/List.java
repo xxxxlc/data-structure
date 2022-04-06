@@ -145,17 +145,26 @@ public class List<Item> implements Iterable<Item> {
         }
     }
 
+    // Print List
+    public void printList (Node head) {
+        while (head != null) {
+            printwt(head.item);
+            head = head.next;
+        }
+        print();
+    }
+
     public static void main(String[] args) {
         Integer[] s1 = {4, 8, 6, 5, 9, 10, 5};
         List<Integer> list1 = new List<>(s1);
-        printList(list1.head);
+        list1.printList(list1.head);
         list1.addTail(15);
         list1.addHead(12);
-        printList(list1.head);
+        list1.printList(list1.head);
         print(list1.popHead());
         print(list1.popTail());
         print(list1.popIndex(3));
-        printList(list1.head);
+        list1.printList(list1.head);
 
         for (Object a : list1) {
             printwt(a);

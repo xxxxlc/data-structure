@@ -63,10 +63,10 @@ public class OrderST<Key extends Comparable<Key>, Value> extends ST<Key, Value>{
      * @param right ley in right
      * @return iterator
      */
-    Iterable<Key> keys (Key left, Key right) {return null;}
+    public Iterable<Key> keys (Key left, Key right) {return null;}
 
     @Override
-    Iterable<Key> keys () {return keys(min(), max());}
+    public Iterable<Key> keys () {return keys(min(), max());}
 
     /**
      * number of keys between left and right

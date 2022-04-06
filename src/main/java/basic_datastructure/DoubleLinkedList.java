@@ -2,8 +2,7 @@ package basic_datastructure;
 
 import java.util.Iterator;
 
-import static func.Print.print;
-import static func.Print.printList;
+import static func.Print.*;
 
 /**
  * @Auther:
@@ -118,6 +117,13 @@ public class DoubleLinkedList<Item> implements Iterable<Item>{
         return cur.item;
     }
 
+    public void printList (DoubleNode head) {
+        while (head != null) {
+            printwt(head.item);
+            head = head.next;
+        }
+        print();
+    }
 
     @Override
     public Iterator<Item> iterator() {
@@ -127,13 +133,13 @@ public class DoubleLinkedList<Item> implements Iterable<Item>{
     public static void main(String[] args) {
         Integer[] s1 = {4, 8, 6, 5, 9, 10, 5};
         DoubleLinkedList<Integer> list1 = new DoubleLinkedList<>(s1);
-        printList(list1.head);
+        list1.printList(list1.head);
         list1.addTail(25);
         list1.addHead(52);
-        printList(list1.head);
+        list1.printList(list1.head);
         print(list1.popHead());
         print(list1.popTail());
         print(list1.popIndex(3));
-        printList(list1.head);
+        list1.printList(list1.head);
     }
 }

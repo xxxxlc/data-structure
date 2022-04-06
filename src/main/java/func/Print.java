@@ -37,21 +37,5 @@ public class Print {
         print();
     }
 
-    // Print List
-    public static void printList (List.Node head) {
-        while (head != null) {
-            printwt(head.item);
-            head = head.next;
-        }
-        print();
-    }
-
-    public static void printList (DoubleLinkedList.DoubleNode head) {
-        while (head != null) {
-            printwt(head.item);
-            head = head.next;
-        }
-        print();
-    }
 
 }

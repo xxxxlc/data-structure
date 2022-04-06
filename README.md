@@ -43,5 +43,12 @@ complete some data structure and algorithms
 ## Symbol Table
 
 - [x] SequentialSearch St
-- [x] BinarySrarch St
+- [x] BinarySearch St
+- [x] BinarySearchTree
+- [x] RedBlackTree
+  - [ ] not complete
+- [ ] HashMap
+  - [ ] SeparateChainingHashST
+  - [ ] LinearProbingHashST
+
 

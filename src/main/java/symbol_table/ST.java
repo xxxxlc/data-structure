@@ -8,7 +8,7 @@ import java.util.Iterator;
  * @Description:
  */
 
-public class ST<Key, Value>{
+public class ST<Key, Value> implements STAPI<Key, Value>{
 
     public ST() {}
 
@@ -30,7 +30,7 @@ public class ST<Key, Value>{
      * delete key in ST
      * @param key key needed to be deleted
      */
-    public Key delete (Key key) {put(key, null); return null;}
+    public void delete (Key key) {put(key, null);}
 
     /**
      * check whether is a key in ST
@@ -51,7 +51,7 @@ public class ST<Key, Value>{
      * return an iterator to check all Key
      * @return iterator
      */
-    Iterable<Key> keys () {return null;}
+    public Iterable<Key> keys () {return null;}
 
     public static void main(String[] args) {
     }

@@ -61,7 +61,7 @@ public class SequentialSearchSt<Key, Value> extends ST<Key, Value> {
     }
 
     @Override
-    public Key delete(Key key) {
+    public void delete(Key key) {
         if (!contains(key)) {
             throw new NoSuchElementException("no this key in ST");
         }
@@ -70,15 +70,13 @@ public class SequentialSearchSt<Key, Value> extends ST<Key, Value> {
         for (Node x = head; x != null; x = x.next) {
             if (key.equals(x.key)) {
                 pre.next = x.next;
-                return x.key;
             }
             pre = x;
         }
-        return null;
     }
 
     @Override
-    Iterable<Key> keys () {
+    public Iterable<Key> keys () {
         Queue<Key> q = new LinkedList<>();
         for (Node x = head; x != null; x = x.next) {
             q.add(x.key);
