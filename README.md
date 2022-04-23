@@ -15,6 +15,7 @@ complete some data structure and algorithms
 ## Search
 
 - [x] BinarySearch
+- [x] UF
 
 ## Sort
 
@@ -47,8 +48,39 @@ complete some data structure and algorithms
 - [x] BinarySearchTree
 - [x] RedBlackTree
   - [ ] not complete
-- [ ] HashMap
-  - [ ] SeparateChainingHashST
-  - [ ] LinearProbingHashST
+- [x] HashMap
+  - [x] SeparateChainingHashST
+  - [x] LinearProbingHashST
 
+- [ ] Set
+  - [x] MathSet
+
+- [ ] List
+
+## Graph
+
+- [x] Graph
+  - [x] CC (Connected Components)
+  - [x] Cycle (check cycle)
+  - [x] SymbolGraph
+- [x] DiGraph
+  - [x] DirectedCycle
+  - [x] DirectedDFS
+  - [x] KosarajuSCC
+  - [x] Topological
+- [x] BreadthFirstSearch
+- [x] DepthFirstSearch
+- [x] EdgeWeightedGraph
+  - [x] Edge
+- [x] EdgeWeightedDigraph
+  - [x] DirectedEdge
+- [x] MST
+  - [x] LazyPrimMST
+  - [x] PrimMST
+  - [x] KruskalMST
+- [x] Shortest Path
+  - [x] SP
+  - [x] DijkstraSP
+  - [x] AcyclicSp
+  - [x] BellmanFordSP
 

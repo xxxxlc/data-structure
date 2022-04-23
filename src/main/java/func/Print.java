@@ -2,8 +2,6 @@
 // Print methods that can be used without qualifiers
 package func;
 
-import basic_datastructure.DoubleLinkedList;
-import basic_datastructure.List;
 import java.io.*;
 
 public class Print {

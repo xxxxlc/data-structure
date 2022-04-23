@@ -46,7 +46,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> {
         }
     }
 
-    IndexMinPQ (int maxN) {
+    public IndexMinPQ (int maxN) {
         /**
          * initialize function
          */
@@ -56,7 +56,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> {
         for (int i = 0; i <= maxN; ++i) qp[i] = -1;
     }
 
-    IndexMinPQ (Key[] a) {
+    public IndexMinPQ (Key[] a) {
         /**
          * initialize with array
          */

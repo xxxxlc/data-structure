@@ -10,7 +10,7 @@ import static func.Print.*;
  * @Description:
  */
 
-public class List<Item> implements Iterable<Item> {
+public class LinkedList<Item> implements Iterable<Item> {
 
     // define class of Node
     public class Node {
@@ -18,21 +18,21 @@ public class List<Item> implements Iterable<Item> {
         public Node next;
     }
 
-    // head of List
+    // head of LinkedList
     public Node head;
 
-    // tail of List
+    // tail of LinkedList
     public Node tail;
 
-    // length of List
+    // length of LinkedList
     public int N = 0;
 
-    public List () {
+    public LinkedList() {
         head = new Node();
         tail = head;
     }
 
-    public List (Item[] a) {
+    public LinkedList(Item[] a) {
         head = new Node();
         tail = head;
         for (Item item : a) {
@@ -41,7 +41,7 @@ public class List<Item> implements Iterable<Item> {
     }
 
     /**
-     * add element to tail of List
+     * add element to tail of LinkedList
      * @param item element
      */
     public void addTail (Item item) {
@@ -58,7 +58,7 @@ public class List<Item> implements Iterable<Item> {
 
 
     /**
-     * add element to head of List
+     * add element to head of LinkedList
      * @param item element
      */
     public void addHead (Item item) {
@@ -74,7 +74,7 @@ public class List<Item> implements Iterable<Item> {
     }
 
     /**
-     * delete head of List
+     * delete head of LinkedList
      * @return delete element
      */
     public Item popHead () {
@@ -85,7 +85,7 @@ public class List<Item> implements Iterable<Item> {
     }
 
     /**
-     * delete element of tail of List
+     * delete element of tail of LinkedList
      * @return delete element
      */
     public Item popTail () {
@@ -156,17 +156,17 @@ public class List<Item> implements Iterable<Item> {
 
     public static void main(String[] args) {
         Integer[] s1 = {4, 8, 6, 5, 9, 10, 5};
-        List<Integer> list1 = new List<>(s1);
-        list1.printList(list1.head);
-        list1.addTail(15);
-        list1.addHead(12);
-        list1.printList(list1.head);
-        print(list1.popHead());
-        print(list1.popTail());
-        print(list1.popIndex(3));
-        list1.printList(list1.head);
+        LinkedList<Integer> linkedList1 = new LinkedList<>(s1);
+        linkedList1.printList(linkedList1.head);
+        linkedList1.addTail(15);
+        linkedList1.addHead(12);
+        linkedList1.printList(linkedList1.head);
+        print(linkedList1.popHead());
+        print(linkedList1.popTail());
+        print(linkedList1.popIndex(3));
+        linkedList1.printList(linkedList1.head);
 
-        for (Object a : list1) {
+        for (Object a : linkedList1) {
             printwt(a);
         }
     }
