@@ -1,5 +1,5 @@
 # Data-Structures-and-Algorithms
-complete some data structure and algorithms
+complete some data structure and algorithms (according to <Algorithm 4>)
 
 
 
@@ -83,4 +83,25 @@ complete some data structure and algorithms
   - [x] DijkstraSP
   - [x] AcyclicSp
   - [x] BellmanFordSP
+
+## String 
+
+- [x] Sort
+  - [x] LSD
+  - [x] MSD
+  - [x] Quick3string
+  - [x] suffix
+- [x] WordSearchTree
+  - [x] TrieST
+  - [x] TST
+- [x] StringSearch
+  - [x] KMP
+  - [x] BoyerMoore
+  - [x] RabinKarp
+- [x] Regular search
+  - [ ] NFA
+
+- [ ] data compression
+
+
 

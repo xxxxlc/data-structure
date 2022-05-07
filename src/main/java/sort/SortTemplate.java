@@ -20,6 +20,10 @@ public class SortTemplate{
         return v.compareTo(w) < 0;
     }
 
+    public static boolean less(String v, String w, int d) {
+        return v.substring(d).compareTo(w.substring(d)) < 0;
+    }
+
     public static void exchange(Comparable[] a, int i, int j) {
         /**
          * exchange two elements in array
@@ -53,6 +57,7 @@ public class SortTemplate{
             a[a.length - 1 - i] = tmp;
         }
     }
+
 
     public static void main(String[] args) {
         Integer[] a = {4, 8, 6, 5};
